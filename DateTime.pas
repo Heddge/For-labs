@@ -27,4 +27,8 @@
     else
       amount_between_years += 365;
   Println($'Количество дней между {year1} и {year2} -> {amount_between_years}');
+  var hours := ReadInteger('Введите количество часов:');
+  var amount_sec : Integer;
+  amount_sec := 3600*hours;
+  Print($'Количество секунд в {hours} часах -> {amount_sec}');
 end.
