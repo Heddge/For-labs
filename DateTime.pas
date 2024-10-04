@@ -7,6 +7,7 @@
   Println($'Год високосный -> {flag}');
   var (day1, month1, day2, month2) := ReadInteger4('Введите число и месяц первой даты, аналогично - второй:');
   Assert((day1 < 32) and (day2 < 32) and (month1 < 13) and (month2 < 13));
+  Assert((day1 > 0) and (day2 > 0) and (month1 > 0) and (month2 > 0));
   if (30*(month1-1 + day1)) < (30*(month2 - 1) + day2) then
     Println('2')
   else
